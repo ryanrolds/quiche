@@ -1,0 +1,13 @@
+{
+  "name": "gchartimage",
+  "version": "0.0.1",
+  "author": "Ryan Olds <ryanrolds@gmail.com>",
+  "description": "Url generator for Google Chart Images",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanrolds/gchartimage"
+  },
+  "dependencies": {
+
+  }
+}

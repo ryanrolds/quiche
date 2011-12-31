@@ -1,8 +1,10 @@
 
+var assert = require('assert');
+
 var Chart = require('../lib/chart');
 
 describe('BHS Chart', function() {
-  var chart = new Chart('bar');
+  var chart = new Chart('Bar');
   chart.setWidth(740);
   chart.setHeight(265)
   chart.setTitle('Clarion County Pennsylvania Census 2010 Race by Age');
@@ -25,7 +27,10 @@ describe('BHS Chart', function() {
 
   describe('#getUrl()', function() {
     it('should return a url', function() {
-      console.log(chart.getUrl());
+      var url = chart.getUrl();
+      assert.equal(typeof url, 'string');
+      assert.ok(url.indexOf('http') === 0);
+      assert.ok(url.indexOf('cht=bvs') > 0);
     });
   });
 });

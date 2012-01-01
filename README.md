@@ -11,11 +11,12 @@
 
 ## Pie chart
 
-  <img src="http://chart.googleapis.com/chart?cht=p&chd=t:3000,2900,50&chco=FF0000,0000FF,00FF00&chdl=Female|Male|Unknown&chds=a&chbh=a,4,23&chdlp=|&chdls=,&chs=300x200">
+  <img src="https://chart.googleapis.com/chart?cht=p&chd=t:3000,2900,50&chco=FF0000,0000FF,00FF00&chdl=Female|Male|Unknown&chds=a&chbh=a,4,23&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000"/>
 
      var Quiche = require('quiche');
      
      var pie = new Quiche('pie');
+     pie.setTransparentBackground();
      pie.addData(3000, 'Female', 'FF0000');
      pie.addData(2900, 'Male', '0000FF');
      pie.addData(50, 'Unknown', '00FF00');

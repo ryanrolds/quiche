@@ -28,7 +28,7 @@
 
      var Quiche = require('quiche');
      
-     var bar = new Quiche('pie');
+     var bar = new Quiche('bar');
      bar.setWidth(700);
      bar.setHeight(265)
      bar.setTitle('Age by race in Someplace, USA');

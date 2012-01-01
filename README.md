@@ -3,15 +3,11 @@
 
   Easy to use Node.js wrapper for [Google Image Charts](http://code.google.com/apis/chart/image).
 
-## Install
-
-     $ npm install quiche
-
-# Usage
+# Examples
 
 ## Pie chart
 
-  <img src="http://chart.googleapis.com/chart?cht=p&chd=t:3000,2900,1500&chco=FF0000,0000FF,00FF00&chdl=Foo|Bas|Bar&chds=a&chbh=a,4,23&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000"/>
+  ![Look, a pie chart](http://chart.googleapis.com/chart?cht=p&chd=t:3000,2900,1500&chco=FF0000,0000FF,00FF00&chdl=Foo|Bas|Bar&chds=a&chbh=a,4,23&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
 
      var Quiche = require('quiche');
      
@@ -21,11 +17,11 @@
      pie.addData(2900, 'Bas', '0000FF');
      pie.addData(1500, 'Bar', '00FF00');
 
-     var imageUrl = pie.getUrl(true);
+     var imageUrl = bar.getUrl(true); // First param controls http vs. https
 
 ## Bar chart
    
-  <img src="https://chart.googleapis.com/chart?cht=bvs&chtt=Some+title+or+something&chts=,,&chd=t:19,19,21,14,19,11,10,18,19,30|4,3,2,3,0,0,3,4,2,2|10,8,2,1,18,9,20,21,19,11|2,1,1,1,1,7,3,6,2,7|1,0,0,1,2,1,0,0,0,0&chco=FF0000,0000FF,008000,00FF00,307000&chdl=Foo|bar|bin|bash|blah&chds=a&chxt=x,y&chxl=0:|1|2|3|4|5|6|7|8|9|10&chbh=a,6,0&chdlp=b|&chdls=,&chs=400x265&chf=bg,s,00000000"/>
+  ![Bar charts are so cool](https://chart.googleapis.com/chart?cht=bvs&chtt=Some+title+or+something&chts=,,&chd=t:19,19,21,14,19,11,10,18,19,30|4,3,2,3,0,0,3,4,2,2|10,8,2,1,18,9,20,21,19,11|2,1,1,1,1,7,3,6,2,7|1,0,0,1,2,1,0,0,0,0&chco=FF0000,0000FF,008000,00FF00,307000&chdl=Foo|bar|bin|bash|blah&chds=a&chxt=x,y&chxl=0:|1|2|3|4|5|6|7|8|9|10&chbh=a,6,0&chdlp=b|&chdls=,&chs=400x265&chf=bg,s,00000000)
 
      var Quiche = require('quiche');
      
@@ -50,15 +46,25 @@
      bar.addAxisLabels('x', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
      bar.addAxisLabels('y'); // Needed to show auto-scaled y-axis
 
-     var imageUrl = bar.getUrl(true);
+     var imageUrl = bar.getUrl(true); // First param controls http vs. https
 
-## Features
+# Documentation
+
+## Install
+
+     $ npm install quiche
+
+## Chart types
+ 
+  Pie (regular & 3D), and Bar (horizontal, verticle, stacked, grouped, overlapped)
+
+# Features
 
   * Pie charts
   * Bar charts
   * Auto scaling
 
-## TODO
+# TODO
 
   * Documentation  
   * More chart types

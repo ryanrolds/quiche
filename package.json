@@ -4,19 +4,23 @@
   "author": "Ryan Olds <ryanrolds@gmail.com>",
   "description": "Url generator for Google Chart Images",
   "keywords": [
+    "google image charts",
+    "charts",
+    "charting",
     "google charts",
     "url"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryanrolds/gchartimage"
+    "url": "https://github.com/ryanrolds/quiche"
   },
+  "main": "./quiche.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec test/*.test.js"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "mocha": ""
+    "mocha": "= 0.8.1"
   }
 }

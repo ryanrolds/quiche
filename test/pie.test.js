@@ -1,10 +1,10 @@
 
 var assert = require('assert');
 
-var Chart = require('../lib/chart');
+var quiche = require('../quiche');
 
 describe('Pie Chart', function() {
-  var pie = new Chart('Pie');
+  var pie = quiche('pie');
   pie.setTransparentBackground();
   pie.addData(3000, 'Foo', 'FF0000');
   pie.addData(2900, 'Bas', '0000FF');

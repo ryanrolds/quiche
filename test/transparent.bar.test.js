@@ -1,10 +1,10 @@
 
 var assert = require('assert');
 
-var Chart = require('../lib/chart');
+var quiche = require('../quiche');
 
 describe('Transparent BHS Chart', function() {
-  var chart = new Chart('Bar');
+  var chart = quiche('Bar');
   chart.setWidth(400);
   chart.setHeight(265)
   chart.setTitle('Some title or something');

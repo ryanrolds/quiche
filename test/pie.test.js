@@ -13,9 +13,8 @@ describe('Pie Chart', function() {
   describe('#getUrl()', function() {
     it('should return a url', function() {
       var url = pie.getUrl();
-      console.log(url);
       assert.equal(typeof url, 'string');
-      assert.ok(url.indexOf('http') === 0);
+      assert.ok(url.indexOf('http://') === 0);
       assert.ok(url.indexOf('cht=p') > 0);
     });
   });

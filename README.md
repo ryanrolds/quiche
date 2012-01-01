@@ -1,7 +1,7 @@
 
 # Quiche
 
-  Easy to use wrapper for Google Image Charts.
+  Easy to use Node.js wrapper for Google Image Charts.
 
 ## Install
 

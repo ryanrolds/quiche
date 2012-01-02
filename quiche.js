@@ -1,6 +1,6 @@
 
 var lookup = {};
-var charts = ['bar', 'pie'];
+var charts = ['bar', 'pie', 'line'];
 charts.forEach(function(item) {
   lookup[item.toLowerCase()] = require('./lib/' + item);
 });

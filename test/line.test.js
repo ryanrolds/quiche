@@ -20,6 +20,5 @@ describe('Line Chart', function() {
 
   it('should be a normal line chart', function() {
     assert.ok(url.indexOf('cht=lc') > 0);
-    console.log(url);
   });
 });

@@ -1,6 +1,6 @@
 {
   "name": "quiche",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Ryan Olds <ryanrolds@gmail.com>",
   "description": "Url generator for Google Chart Images",
   "keywords": [

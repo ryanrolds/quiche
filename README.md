@@ -49,7 +49,7 @@
 
 ## Line chart
 
-  ![Lines](http://chart.googleapis.com/chart?cht=lc&chtt=Something+important&chts=,,&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
+  ![Lines](http://chart.googleapis.com/chart?cht=lc&chtt=Something+with+lines&chts=,,&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
 
      var chart = quiche('line');
      chart.setTitle('Something with lines');

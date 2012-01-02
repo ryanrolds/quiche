@@ -29,7 +29,6 @@
      bar.setWidth(400);
      bar.setHeight(265);
      bar.setTitle('Some title or something');
-     bar.setTitle('Age by race in Someplace, USA');
      bar.setBarStacked(); // Stacked chart
      bar.setBarWidth(0); 
      bar.setBarSpacing(6); // 6 pixles between bars/groups

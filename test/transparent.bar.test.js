@@ -3,7 +3,7 @@ var assert = require('assert');
 
 var quiche = require('../quiche');
 
-describe('Transparent BHS Chart', function() {
+describe('Transparent Verticle Stacked Bar Chart', function() {
   var chart = quiche('Bar');
   chart.setWidth(400);
   chart.setHeight(265)
@@ -24,12 +24,21 @@ describe('Transparent BHS Chart', function() {
   chart.addAxisLabels('x', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
   chart.addAxisLabels('y');
 
-  describe('#getUrl()', function() {
-    it('should return a url', function() {
-      var url = chart.getUrl();
-      assert.equal(typeof url, 'string');
-      assert.ok(url.indexOf('http://') === 0);
-      assert.ok(url.indexOf('cht=bvs') > 0);
-    });
+  var url = chart.getUrl();
+
+  it('url should be a string', function() {
+    assert.equal(typeof url, 'string');
+  });
+
+  it('url should be http', function() {
+    assert.ok(url.indexOf('http://') === 0);
+  });
+
+  it('chart type should be bvs', function() {
+    assert.ok(url.indexOf('cht=bvs') > 0);
+  });
+
+  it('should be transparent', function() {
+    assert.ok(url.indexOf('chf=bg,s,00000000') !== -1);
   });
 });

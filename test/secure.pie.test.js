@@ -12,8 +12,11 @@ describe('Secure Pie Chart', function() {
 
   var url = pie.getUrl(true);
 
-  it('should return an https url', function() {
+  it('url should be a string', function() {
     assert.equal(typeof url, 'string');
+  });
+
+  it('should an https url', function() {
     assert.ok(url.indexOf('https://') === 0);
   });
 });

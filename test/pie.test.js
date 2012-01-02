@@ -10,13 +10,14 @@ describe('Pie Chart', function() {
   pie.addData(2900, 'Bas', '0000FF');
   pie.addData(1500, 'Bar', '00FF00');
 
-  describe('#getUrl()', function() {
-    it('should return a url', function() {
-      var url = pie.getUrl();
-      assert.equal(typeof url, 'string');
-      assert.ok(url.indexOf('http://') === 0);
-      assert.ok(url.indexOf('cht=p') > 0);
-    });
+  var url = pie.getUrl();
+
+  it('should return a url', function() {
+    assert.equal(typeof url, 'string');
+  });
+
+  it('should be a pie chart', function() {
+    assert.ok(url.indexOf('cht=p') > 0);
   });
 });
 

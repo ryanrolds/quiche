@@ -78,25 +78,25 @@
 
 ### All charts
 
-  chart.setWidth(height [number]);
-  chart.setHeight(height [number]);
-  chart.setTitle(title [string]);
-  chart.setTitleColor(color [hex color]);
-  chart.setTitleSize(size [number]);
-  chart.setTitleRight();
-  chart.setTitleLeft();
-  chart.setLegendLeft();
-  chart.setLegendRight();
-  chart.setLegendBottom();
-  chart.setLegendTop();
-  chart.setLegendVertical();
-  chart.setLegendHorizontal();
-  chart.setLegendSize([number]);
-  chart.setTransparentBackground();
-  chart.addAxisLabels(axis [x | y | r], labels [array]);
-  chart.addData(data [number | array], label [string], color [hex color]);
-  chart.setAutoScaling();
-  chart.getUrl();
+  * chart.setWidth(height [number]);
+  * chart.setHeight(height [number]);
+  * chart.setTitle(title [string]);
+  * chart.setTitleColor(color [hex color]);
+  * chart.setTitleSize(size [number]);
+  * chart.setTitleRight();
+  * chart.setTitleLeft();
+  * chart.setLegendLeft();
+  * chart.setLegendRight();
+  * chart.setLegendBottom();
+  * chart.setLegendTop();
+  * chart.setLegendVertical();
+  * chart.setLegendHorizontal();
+  * chart.setLegendSize([number]);
+  * chart.setTransparentBackground();
+  * chart.addAxisLabels(axis [x | y | r], labels [array]);
+  * chart.addData(data [number | array], label [string], color [hex color]);
+  * chart.setAutoScaling();
+  * chart.getUrl();
 
 ### Pie
 
@@ -104,24 +104,20 @@
 
 ### Bar
 
-  bar.addData();
-  bar.setBarWidth([number]);
-  bar.setBarSpacing([number]);
-  bar.setBarVertical();
-  bar.setBarHorizontal();
-  bar.setBarGrouped();
-  bar.setBarStacked();
-  bar.setBarOverlapped();
+  * bar.addData();
+  * bar.setBarWidth([number]);
+  * bar.setBarSpacing([number]);
+  * bar.setBarVertical();
+  * bar.setBarHorizontal();
+  * bar.setBarGrouped();
+  * bar.setBarStacked();
+  * bar.setBarOverlapped();
 
 ### Line
 
-  line.addData(data [number | array], label [string], color [hex color], thickness [number], line length [number], space length [number]);
-  line.setSparklines();
-  line.setXY();
-
-## Chart types
- 
-  Pie (regular & 3D), and Bar (horizontal, verticle, stacked, grouped, overlapped)
+  * line.addData(data [number | array], label [string], color [hex color], thickness [number], line length [number], space length [number]);
+  * line.setSparklines();
+  * line.setXY();
 
 # Features
 

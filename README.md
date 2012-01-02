@@ -96,7 +96,7 @@
   * chart.addAxisLabels(axis [x | y | r], labels [array]);
   * chart.addData(data [number | array], label [string], color [hex color]);
   * chart.setAutoScaling();
-  * chart.getUrl();
+  * chart.getUrl(https [boolean]); // true = https, false = http
 
 ### Pie
 

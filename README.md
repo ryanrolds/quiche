@@ -100,7 +100,7 @@
 
 ### Pie
 
-  pie.set3D();
+  * pie.set3D();
 
 ### Bar
 

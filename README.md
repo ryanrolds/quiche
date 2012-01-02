@@ -1,4 +1,3 @@
-
 # Quiche
 
   Easy to use Node.js wrapper for [Google Image Charts](http://code.google.com/apis/chart/image).
@@ -17,7 +16,7 @@
      pie.addData(2900, 'Bas', '0000FF');
      pie.addData(1500, 'Bar', '00FF00');
 
-     var imageUrl = bar.getUrl(true); // First param controls http vs. https
+     var imageUrl = pie.getUrl(true); // First param controls http vs. https
 
 ## Bar chart
    
@@ -60,7 +59,7 @@
      chart.setAutoScaling();
      chart.setTransparentBackground();
 
-     var imageUrl = bar.getUrl(true); // First param controls http vs. https     
+     var imageUrl = chart.getUrl(true); // First param controls http vs. https     
 
 # Documentation
 

@@ -1,6 +1,6 @@
 # Quiche
 
-  Easy to use Node.js wrapper for [Google Chart Tools: Image Charts](http://code.google.com/apis/chart/image).
+  Easy to use [Node.js](https://nodejs.org) wrapper for [Google Chart Tools: Image Charts](http://code.google.com/apis/chart/image).
 
 # Examples
 

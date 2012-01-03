@@ -2,7 +2,7 @@
   "name": "quiche",
   "version": "0.0.5",
   "author": "Ryan Olds <ryanrolds@gmail.com>",
-  "description": "Url generator for Google Chart Images",
+  "description": "Google Chart Tools: Image Chart wrapper for Node.js",
   "keywords": [
     "google image charts",
     "charts",

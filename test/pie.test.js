@@ -20,6 +20,3 @@ describe('Pie Chart', function() {
     assert.ok(url.indexOf('cht=p') > 0);
   });
 });
-
-
-

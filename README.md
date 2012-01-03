@@ -59,7 +59,20 @@
      chart.setAutoScaling();
      chart.setTransparentBackground();
 
-     var imageUrl = chart.getUrl(true); // First param controls http vs. https     
+     var imageUrl = chart.getUrl(true); // First param controls http vs. https
+
+## QR Code
+
+  ![QR Code](https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=https://github.com/ryanrolds/quiche&chld=L|0)
+
+     var quiche = require('quiche');
+
+     var qr = quiche('qr');
+     qr.setLabel('https://github.com/ryanrolds/quiche');
+     qr.setWidth(100);
+     qr.setHeight(100);
+
+     var url = qr.getUrl(true); // First param controls http vs. https
 
 # Documentation
 
@@ -74,6 +87,7 @@
   * line
   * pie
   * bar
+  * qr
 
 ### All charts
 
@@ -117,6 +131,17 @@
   * line.addData(data [number | array], label [string], color [hex color], thickness [number], line length [number], space length [number]);
   * line.setSparklines();
   * line.setXY();
+
+### QR Code
+
+  * qr.setLabel(data [string]);
+  * qr.setEncoding(encoding [UTF-8 | Shift_JS | ISO-8859-1]);
+  * qr.setErrorCorrectionLevel(level [string]) // http://code.google.com/apis/chart/infographics/docs/qr_codes.html#overview
+  * qr.setMargin(margin [number]); // Margin around graphic
+  * qr.setWidth(width [number]);
+  * qr.setHeight(height [number]);
+  * qr.getUrl(https [boolean]); // true = https, false = http
+
 
 # Features
 

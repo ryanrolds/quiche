@@ -10,8 +10,6 @@ describe('QR Infograph', function() {
 
   var url = qr.getUrl();
 
-  console.log(url);
-
   it('should return a url', function() {
     assert.equal(typeof url, 'string');
   });

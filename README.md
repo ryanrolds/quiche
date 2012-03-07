@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/ryanrolds/quiche.png)](http://travis-ci.org/ryanrolds/quiche)
+
 # Quiche
 
   Easy to use [Node.js](http://nodejs.org) wrapper for [Google Chart Tools: Image Charts](http://code.google.com/apis/chart/image).
@@ -104,6 +106,7 @@
   * chart.setLegendTop();
   * chart.setLegendVertical();
   * chart.setLegendHorizontal();
+  * chart.setLegendHidden();
   * chart.setLegendSize([number]);
   * chart.setTransparentBackground();
   * chart.addAxisLabels(axis [x | y | r], labels [array]);

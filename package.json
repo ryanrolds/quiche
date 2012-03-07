@@ -1,6 +1,6 @@
 {
   "name": "quiche",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Ryan Olds <ryanrolds@gmail.com>",
   "description": "Google Chart Tools: Image Chart & Infographics wrapper for Node.js",
   "keywords": [

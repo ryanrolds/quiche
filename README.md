@@ -113,6 +113,7 @@
   * chart.addData(data [number | array], label [string], color [hex color]);
   * chart.setAutoScaling();
   * chart.getUrl(https [boolean]); // true = https, false = http
+  * chart.getPostReq(https [boolean], callback [function]);
 
 ### Pie
 

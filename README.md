@@ -2,7 +2,7 @@
 
 # Quiche
 
-  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Chart Tools: Image Charts](http://code.google.com/apis/chart/image).
+  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Chart Tools: Image Charts](https://developers.google.com/chart/image/).
 
 # Examples
 
@@ -139,7 +139,7 @@
 
   * qr.setLabel(data [string]);
   * qr.setEncoding(encoding [UTF-8 | Shift_JS | ISO-8859-1]);
-  * qr.setErrorCorrectionLevel(level [string]) // http://code.google.com/apis/chart/infographics/docs/qr_codes.html#overview
+  * qr.setErrorCorrectionLevel(level [string]) // https://developers.google.com/chart/infographics/docs/qr_codes
   * qr.setMargin(margin [number]); // Margin around graphic
   * qr.setWidth(width [number]);
   * qr.setHeight(height [number]);

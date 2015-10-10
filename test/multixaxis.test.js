@@ -15,7 +15,7 @@ describe('Multiple x axis labels', function() {
   var url = chart.getUrl();
 
   it('should have two x asix', function() {
-    assert.ok(url.indexOf('2:|Earlier|Later') !== -1);
-    assert.ok(url.indexOf('chxt=y,x,x') !== -1);
+    assert.ok(url.indexOf('2%3A%7CEarlier%7CLater') !== -1);
+    assert.ok(url.indexOf('chxt=y%2Cx%2Cx') !== -1);
   });
 });

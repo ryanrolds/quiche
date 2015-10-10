@@ -16,6 +16,6 @@ describe('Line with styles chart', function() {
   });
 
   it('url has stylings', function() {
-    assert.ok(url.indexOf('chls=5,5,5|3|5,10') !== -1);
+    assert.ok(url.indexOf('chls=5%2C5%2C5%7C3%7C5%2C10') !== -1);
   });
 });

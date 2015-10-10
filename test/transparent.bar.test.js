@@ -39,10 +39,10 @@ describe('Transparent Verticle Stacked Bar Chart', function() {
   });
 
   it('should be transparent', function() {
-    assert.ok(url.indexOf('chf=bg,s,00000000') !== -1);
+    assert.ok(url.indexOf('chf=bg%2Cs%2C00000000') !== -1);
   });
   
   it('should have legend under', function() {
-    assert.ok(url.indexOf('&chdlp=b|l') !== -1);
+    assert.ok(url.indexOf('&chdlp=b%7Cl') !== -1);
   });
 });

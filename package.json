@@ -1,8 +1,13 @@
 {
   "name": "quiche",
   "version": "0.0.10",
-  "author": "Ryan Olds <ryanrolds@gmail.com>",
   "description": "Google Chart Tools: Image Chart & Infographics wrapper for Node.js",
+  "license": "MIT",
+  "author": "",
+  "contributors": [
+    "Ryan Olds <ryanrolds@gmail.com> (https://github.com/ryanrolds)",
+    "Marcus Besjes (http://vigour.io/)"
+  ],
   "keywords": [
     "google image charts",
     "charts",

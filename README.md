@@ -8,7 +8,7 @@
 
 ## Pie chart
 
-  ![Look, a pie chart](http://chart.googleapis.com/chart?cht=p&chd=t:3000,2900,1500&chco=FF0000,0000FF,00FF00&chdl=Foo|Bas|Bar&chds=a&chbh=a,4,23&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
+  ![Look, a pie chart](https://chart.googleapis.com/chart?cht=p&chd=t%3A3000%2C2900%2C1500&chco=FF0000%2C0000FF%2C00FF00&chdl=Foo%7CBas%7CBar&chds=a&chxt=y&chxl=&chs=300x200&chf=bg%2Cs%2C00000000&chl=Foo%7CBas%7CBar)
 
      var Quiche = require('quiche');
      
@@ -17,7 +17,7 @@
      pie.addData(3000, 'Foo', 'FF0000');
      pie.addData(2900, 'Bas', '0000FF');
      pie.addData(1500, 'Bar', '00FF00');
-
+     pie.setLabel(['Foo','Bas','Bar']); // Add labels to pie segments
      var imageUrl = pie.getUrl(true); // First param controls http vs. https
 
 ## Bar chart

@@ -2,13 +2,14 @@
 
 # Quiche
 
-  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Chart Tools: Image Charts](https://developers.google.com/chart/image/).
+  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Chart Tools: Image Charts](https://developers.google.com/chart/image/) ([deprecated by Google](https://developers.googleblog.com/2012/04/changes-to-deprecation-policies-and-api.html)) that also support [Image-Charts](https://image-charts.com) a drop-in-replacement.
 
 # Examples
 
 ## Pie chart
 
-  ![Look, a pie chart](https://chart.googleapis.com/chart?cht=p&chd=t%3A3000%2C2900%2C1500&chco=FF0000%2C0000FF%2C00FF00&chdl=Foo%7CBas%7CBar&chds=a&chxt=y&chxl=&chs=300x200&chf=bg%2Cs%2C00000000&chl=Foo%7CBas%7CBar)
+  ![Look, a pie chart](https://chart.googleapis.com/chart?cht=p&chd=t%3A3000%2C2900%2C1500&chco=FF0000%2C0000FF%2C00FF00&chdl=Foo%7CBas%7CBar&chds=a&chxt=y&chs=300x200&chf=bg%2Cs%2C00000000&chl=Foo%7CBas%7CBar)
+  ![Look, a pie chart](https://image-charts.com/chart?cht=p&chd=t%3A3000%2C2900%2C1500&chco=FF0000%2C0000FF%2C00FF00&chdl=Foo%7CBas%7CBar&chds=a&chxt=y&chs=300x200&chf=bg%2Cs%2C00000000&chl=Foo%7CBas%7CBar)
 
      var Quiche = require('quiche');
 
@@ -23,6 +24,7 @@
 ## Bar chart
 
   ![Bar charts are so cool](https://chart.googleapis.com/chart?cht=bvs&chtt=Some+title+or+something&chts=,,&chd=t:19,19,21,14,19,11,10,18,19,30|4,3,2,3,0,0,3,4,2,2|10,8,2,1,18,9,20,21,19,11|2,1,1,1,1,7,3,6,2,7|1,0,0,1,2,1,0,0,0,0&chco=FF0000,0000FF,008000,00FF00,307000&chdl=Foo|bar|bin|bash|blah&chds=a&chxt=x,y&chxl=0:|1|2|3|4|5|6|7|8|9|10&chbh=a,6,0&chdlp=b|&chdls=,&chs=400x265&chf=bg,s,00000000)
+  ![Bar charts are so cool](https://image-charts.com/chart?cht=bvs&chtt=Some+title+or+something&chd=t:19,19,21,14,19,11,10,18,19,30|4,3,2,3,0,0,3,4,2,2|10,8,2,1,18,9,20,21,19,11|2,1,1,1,1,7,3,6,2,7|1,0,0,1,2,1,0,0,0,0&chco=FF0000,0000FF,008000,00FF00,307000&chdl=Foo|bar|bin|bash|blah&chds=a&chxt=x,y&chxl=0:|1|2|3|4|5|6|7|8|9|10&chbh=a,6,0&chdlp=b&chs=400x265&chf=bg,s,00000000)
 
      var Quiche = require('quiche');
 
@@ -50,6 +52,7 @@
 ## Line chart
 
   ![Lines](http://chart.googleapis.com/chart?cht=lc&chtt=Something+with+lines&chts=,,&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
+  ![Lines](https://image-charts.com/chart?cht=lc&chtt=Something+with+lines&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chs=300x200&chf=bg,s,00000000)
 
      var quiche = require('quiche');
 
@@ -75,6 +78,8 @@
      qr.setHeight(100);
 
      var url = qr.getUrl(true); // First param controls http vs. https
+
+  Note: currently not supported by Image-Charts
 
 # Documentation
 

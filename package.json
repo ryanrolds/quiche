@@ -22,9 +22,11 @@
   },
   "main": "./quiche.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R spec test/*.test.js"
+    "test": "mocha -R spec test/*.test.js",
+    "test-watch": "mocha -w -R spec test/*.test.js"
   },
   "dependencies": {
+    "lodash.compact": "^3.0.1"
   },
   "devDependencies": {
     "mocha": "= 2.3.2"

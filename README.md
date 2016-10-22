@@ -2,7 +2,7 @@
 
 # Quiche
 
-  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Chart Tools: Image Charts](https://developers.google.com/chart/image/) ([deprecated by Google](https://developers.googleblog.com/2012/04/changes-to-deprecation-policies-and-api.html)) that also support [Image-Charts](https://image-charts.com) a drop-in-replacement.
+  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Image Charts - Chart Tools](https://developers.google.com/chart/image/) ([deprecated by Google](https://developers.googleblog.com/2012/04/changes-to-deprecation-policies-and-api.html)) that also supports Image-Charts, a drop-in [replacement for Google Image Charts](https://image-charts.com).
 
 # Examples
 
@@ -105,6 +105,7 @@
   * chart.setTitleSize(size [number]);
   * chart.setTitleRight();
   * chart.setTitleLeft();
+  * chart.setLegendOrder(order [string])
   * chart.setLegendLeft();
   * chart.setLegendRight();
   * chart.setLegendBottom();
@@ -117,6 +118,7 @@
   * chart.addAxisLabels(axis [x | y | r], labels [array]);
   * chart.addData(data [number | array], label [string], color [hex color]);
   * chart.setAutoScaling();
+  * chart.setHostname(hostname [string]); // e.g. 'image-charts.com' to use Image-Charts (default is the deprecated 'chart.googleapis.com')
   * chart.getUrl(https [boolean]); // true = https, false = http
   * chart.getReq(https [boolean], callback [function]);
   * chart.getPostReq(https [boolean], callback [function]);

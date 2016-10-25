@@ -34,7 +34,6 @@ describe('Image-Charts', function() {
       assert.notEqual(res, undefined);
       assert.strictEqual(res.statusCode, 200);
       assert.ok(res.headers['content-type'], 'image/png');
-      assert.strictEqual(res.req.socket._host, 'image-charts.com');
       var contentLength = parseInt(res.headers['content-length'], 10);
       assert.strictEqual(contentLength > 0, true)
 
@@ -55,7 +54,6 @@ describe('Image-Charts', function() {
       assert.notEqual(res, undefined);
       assert.strictEqual(res.statusCode, 200);
       assert.strictEqual(res.headers['content-type'], 'image/png');
-      assert.strictEqual(res.req.socket._host, 'image-charts.com');
 
       var contentLength = parseInt(res.headers['content-length'], 10);
       assert.strictEqual(contentLength > 0, true)

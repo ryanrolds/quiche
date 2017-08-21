@@ -62,6 +62,7 @@
      chart.addData([1000, 1500, 2000], 'Asdf', '0000FF');
      chart.addAxisLabels('x', ['1800', '1900', '2000']);
      chart.setAutoScaling();
+     chart.setAxixRange('y', 500, 3500, 250);
      chart.setTransparentBackground();
 
      var imageUrl = chart.getUrl(true); // First param controls http vs. https
@@ -139,12 +140,14 @@
   * bar.setBarGrouped();
   * bar.setBarStacked();
   * bar.setBarOverlapped();
+  * bar.setAxisRange(axis ["x", "r", "y"], start [number], end [number], step [number]);
 
 ### Line
 
   * line.addData(data [number | array], label [string], color [hex color], thickness [number], line length [number], space length [number]);
   * line.setSparklines();
   * line.setXY();
+  * line.setAxisRange(axis ["x", "r", "y"], start [number], end [number], step [number]);
 
 ### QR Code
 

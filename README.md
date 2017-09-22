@@ -62,7 +62,7 @@
      chart.addData([1000, 1500, 2000], 'Asdf', '0000FF');
      chart.addAxisLabels('x', ['1800', '1900', '2000']);
      chart.setAutoScaling();
-     chart.setAxixRange('y', 500, 3500, 250);
+     chart.setAxisRange('y', 500, 3500, 250);
      chart.setTransparentBackground();
 
      var imageUrl = chart.getUrl(true); // First param controls http vs. https

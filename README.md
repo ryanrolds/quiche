@@ -99,7 +99,7 @@
 
 ### All charts
 
-  * chart.setWidth(height [number]);
+  * chart.setWidth(width [number]);
   * chart.setHeight(height [number]);
   * chart.setTitle(title [string]);
   * chart.setTitleColor(color [hex color]);

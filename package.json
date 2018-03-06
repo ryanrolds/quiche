@@ -28,6 +28,6 @@
   "dependencies": {},
   "devDependencies": {
     "jshint": "2.9.5",
-    "mocha": "5.0.1"
+    "mocha": "5.0.2"
   }
 }

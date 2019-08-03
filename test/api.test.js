@@ -15,6 +15,10 @@ describe('API', function() {
     url = unescape(chart.getUrl());
   })
 
+  it('url should contains image-charts.com', function() {
+    assert.ok(chart.getUrl().indexOf('image-charts.com') > 0);
+  });
+
   it('chts should only contain one value', function() {
     chart.setTitleLeft();
     url = unescape(chart.getUrl());

@@ -1,8 +1,8 @@
-[![Build Status](https://secure.travis-ci.org/ryanrolds/quiche.png)](http://travis-ci.org/ryanrolds/quiche)
+[![Build Status](https://secure.travis-ci.org/ryanrolds/quiche.png)](https://travis-ci.org/ryanrolds/quiche)
 
 # Quiche
 
-  Easy to use [Node.js](http://nodejs.org) wrapper for [Google Image Charts - Chart Tools](https://developers.google.com/chart/image/) ([deprecated by Google](https://developers.googleblog.com/2012/04/changes-to-deprecation-policies-and-api.html)) that also supports Image-Charts, a drop-in [replacement for Google Image Charts](https://image-charts.com).
+  Easy to use [Node.js](https://nodejs.org) wrapper for [Google Image Charts - Chart Tools](https://developers.google.com/chart/image/) ([deprecated by Google](https://developers.googleblog.com/2012/04/changes-to-deprecation-policies-and-api.html)) that also supports Image-Charts, a drop-in [replacement for Google Image Charts](https://image-charts.com).
 
 # Examples
 
@@ -42,7 +42,7 @@
      bar.addData([4, 3, 2, 3, 0, 0, 3, 4, 2, 2], 'bar', '0000FF');
      bar.addData([10, 8, 2, 1, 18, 9, 20, 21, 19, 11], 'bin', '008000');
      bar.addData([2, 1, 1, 1, 1, 7, 3, 6, 2, 7], 'bash', '00FF00');
-     bar.addData([1, 0, 0, 1, 2, 1, 0, 0, 0, 0], 'blah', '307000');     
+     bar.addData([1, 0, 0, 1, 2, 1, 0, 0, 0, 0], 'blah', '307000');
 
      bar.setAutoScaling(); // Auto scale y axis
      bar.addAxisLabels('x', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
@@ -51,7 +51,7 @@
 
 ## Line chart
 
-  ![Lines](http://chart.googleapis.com/chart?cht=lc&chtt=Something+with+lines&chts=,,&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
+  ![Lines](https://chart.googleapis.com/chart?cht=lc&chtt=Something+with+lines&chts=,,&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chdlp=|&chdls=,&chs=300x200&chf=bg,s,00000000)
   ![Lines](https://image-charts.com/chart?cht=lc&chtt=Something+with+lines&chd=t:3000,2900,1500|1000,1500,2000&chco=008000,0000FF&chdl=Blah|Asdf&chds=a&chxt=y,x&chxl=1:|1800|1900|2000&chbh=a,,&chs=300x200&chf=bg,s,00000000)
 
      var quiche = require('quiche');
@@ -119,7 +119,8 @@
   * chart.addAxisLabels(axis [x | y | r], labels [array]);
   * chart.addData(data [number | array], label [string], color [hex color]);
   * chart.setAutoScaling();
-  * chart.setHostname(hostname [string]); // e.g. 'image-charts.com' to use Image-Charts (default is the deprecated 'chart.googleapis.com')
+  * chart.setHostname(hostname [string]);
+    * e.g. 'chart.googleapis.com' to use the deprecated Google Image Charts API (default is 'image-charts.com')
   * chart.getUrl(https [boolean]); // true = https, false = http
   * chart.getReq(https [boolean], callback [function]);
   * chart.getPostReq(https [boolean], callback [function]);
@@ -167,6 +168,6 @@
 
 # TODO
 
-  * Documentation  
+  * Documentation
   * More chart types
   * Better confict handling

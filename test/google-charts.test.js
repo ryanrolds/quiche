@@ -2,12 +2,12 @@ var assert = require('assert');
 
 var quiche = require('../quiche');
 
-describe('Image-Charts', function() {
+describe('Google Image Charts', function() {
   var chart;
 
   beforeEach(function() {
     chart = quiche('line');
-    chart.setHostname('image-charts.com');
+    chart.setHostname('chart.googleapis.com');
     chart.setTitle('Something with lines');
     chart.addData([
       3000, 2900, 1500
@@ -21,11 +21,11 @@ describe('Image-Charts', function() {
   });
 
   afterEach(function() {
-    chart.setHostname('chart.googleapis.com');
+    chart.setHostname('image-charts.com');
   });
 
-  it('url should contains image-charts.com', function() {
-    assert.ok(chart.getUrl().indexOf('image-charts.com') > 0);
+  it('url should contains chart.googleapis.com', function() {
+    assert.ok(chart.getUrl().indexOf('chart.googleapis.com') > 0);
   });
 
   it('should return GET request', function(done) {
